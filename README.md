@@ -17,7 +17,8 @@ works well.
 
 I used Visual Studio 2017 and the NuGet Package Reference Upgrader extension to do the initial conversion
 
-ToDo - Linux
+Works on Linux with JetBrain's Rider, including joint .Net and Javascript debugging
+(Ubuntu 19.04, Rider EAP 191.6733.764)
 
 Update 20190426
 --removed unnecessary references, removed a hardcoded reference to the launched url,  and other tidying up. 
