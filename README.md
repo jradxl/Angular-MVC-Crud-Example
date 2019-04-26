@@ -19,5 +19,8 @@ I used Visual Studio 2017 and the NuGet Package Reference Upgrader extension to 
 
 ToDo - Linux
 
+Update 20190426
+--removed unnecessary references, removed a hardcoded reference to the launched url,  and other tidying up. 
+
 April 2019
 Many thanks to original author.

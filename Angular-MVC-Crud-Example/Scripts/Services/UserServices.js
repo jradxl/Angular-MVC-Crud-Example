@@ -1,9 +1,12 @@
-﻿userApp.service("userService", function ($http) {
+﻿userApp.service("userService", function ($http, $location) {
+
     var $this = this;
+    var Domain = $location.absUrl();
+
     $this.AddEdit = function (user) {
         var request = $http({
             method: 'POST',
-            url: Domain + 'AddEditUser',
+            url: Domain + 'home/AddEditUser',
             data: JSON.stringify(user),
             dataType: "json"
         });
@@ -13,7 +16,7 @@
     $this.Delete = function (id) {
         var request = $http({
             method: 'POST',
-            url: Domain + 'DeleteUser',
+            url: Domain + 'home/DeleteUser',
             data: "{ id:" + id + " }",
             dataType: "json"
         });
@@ -23,7 +26,7 @@
     $this.GetAll = function () {
         var request = $http({
             method: 'GET',
-            url: Domain + 'GetAllUsers',
+            url: Domain + 'home/GetAllUsers',
         });
         return request;
     }
@@ -31,7 +34,7 @@
     $this.GetUser = function (id) {
         var request = $http({
             method: 'GET',
-            url: Domain + 'GetUser/' + id,
+            url: Domain + 'home/GetUser/' + id,
         });
         return request;
     }

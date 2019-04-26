@@ -6,10 +6,10 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css", "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
     @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/jquery", 
+    @Scripts.Render("~/bundles/jquery",
                     "~/Scripts/angular.js",
-                    "~/Scripts/Module/Module.js", 
-                    "~/Scripts/Services/UserServices.js", 
+                    "~/Scripts/Module/Module.js",
+                    "~/Scripts/Services/UserServices.js",
                     "~/Scripts/Controller/UserController.js")
 </head>
 <body>
@@ -17,9 +17,14 @@
         @RenderBody()
     </div>
     @Scripts.Render("~/bundles/bootstrap")
-    <script type="text/javascript">
-        var Domain = 'http://localhost:58292/home/';
-    </script>
     @RenderSection("scripts", required: false)
 </body>
 </html>
+
+
+<!--
+hard coding of Domain removed
+<script type="text/javascript">
+    var Domain = 'http://localhost:58292/home/';
+</script>
+-->
